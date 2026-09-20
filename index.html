@@ -12,36 +12,40 @@
   </style>
 </head>
 <body>
-<main><article>
+<main><article><nav><a href="./">Privacy Policy</a> · <a href="licenses.html">Licenses</a> · <a href="account-deletion.html">Account Deletion</a></nav>
   <div class="eyebrow">Gold Break Rush</div>
   <h1>Privacy Policy</h1>
-  <p class="updated">Effective date: 11 August 2026</p>
+  <p class="updated">Effective date: 20 September 2026</p>
 
   <p>This policy explains how <strong>Kami Light Studio</strong> (“we”) handles information when you use the Gold Break Rush Android game.</p>
 
-  <h2>Information handled by the game</h2>
-  <p>The game does not require an account and we do not ask you to enter your name, email address, precise location, contacts, photos, or files. Gameplay progress and settings are stored locally on your device. Removing the app may remove this local data.</p>
-
-  <h2>Advertising</h2>
-  <p>Gold Break Rush uses Google AdMob to display interstitial advertising. The Google Mobile Ads SDK may automatically collect or share IP address (which may be used to estimate general location), app interactions, diagnostic information, and device or account identifiers for advertising, analytics, and fraud prevention. Where required, Google’s User Messaging Platform asks for your privacy choices before ads are requested. A “Privacy options” control is available in the game whenever the platform requires it.</p>
+  <h2>Local play and optional Google sign-in</h2>
+<p>You can play as Guest without an online account. Local saves, settings, scores and unlocks remain on your device. If you choose Google sign-in, Firebase Authentication provides a Gold Break Rush account identifier and supplies your Google display name and email, when available, for account access and display. The game does not receive your Google password and does not expose sign-in tokens to gameplay code.</p>
+<p>Firebase Authentication also processes IP addresses and SDK/platform information to operate sign-in and help prevent abuse. Firestore requests include the signed-in account identifier. Google processes this information under its published service privacy safeguards.</p><h2>Online progress and offline saves</h2>
+<p>When signed in, an explicit Save Game first saves on your device and then backs up that saved snapshot using Google Cloud Firestore. Each map and mode has a separate save. Online snapshots contain gameplay state such as wave, gold, score, ball inventory, upgrades and map/boss state, with save identifiers and synchronization timestamps. Completed modes/unlocks are synchronized separately to make them available on your other devices. Selecting a saved mode or Load Game checks the relevant online progress; there is no per-wave run upload.</p>
+<p>If a requested backup cannot finish, an account-specific copy may remain on your device for retry. Account switching does not transfer that pending copy to another account. Local gameplay remains available offline. Signing in alone does not upload every existing local run. Online data is linked to the game account and used to provide cross-device progress, resolve differing saves and operate the service, not to create a public leaderboard.</p>
+<h2>Account deletion and retention</h2>
+<p>Use <strong>Account → Delete Account &amp; Cloud Data</strong> to permanently delete your Gold Break Rush authentication record, all online run saves and online progression/unlocks. You will be asked to verify the same Google account. Keep the app connected until completion is confirmed; if it fails, retry or contact support. A partial failure may mean online progress has already been removed while account deletion still needs to finish. This does not delete your Google account.</p>
+<p>If you no longer have the app, <a href="account-deletion.html">request account deletion here</a> or email <a href="mailto:kamistudio.support@gmail.com">kamistudio.support@gmail.com</a>. We verify account ownership before processing requests. The static request page prepares an email; you must send it. Request emails are used to verify, process and respond to the request, not for marketing.</p>
+<p>Online account/progress data remains until it is replaced through normal saving or deleted through an account-deletion request. A minimal security lock with only the account identifier and deletion time prevents older sessions from restoring deleted progress. It contains no profile or gameplay data and is removed after account deletion is verified and existing sessions can no longer write. Service-provider backups/logs may follow their own retention processes. Any retention needed for security or legal obligations is limited to that purpose.</p>
+<p>Successful in-app deletion clears pending online backups for that account on this device. Local run saves, scores, settings, unlocks and purchase entitlements remain usable as local/Guest data. A web request cannot remotely erase device-only files. Clear the app's storage or uninstall it if you also want to remove those local files. Signing out is not deletion. Google Play manages purchase records separately.</p>
+<h2>Advertising</h2>
+  <p>Gold Break Rush uses Google AdMob to display interstitial advertising and optional rewarded advertising that grants an in-game reward after completion. The Google Mobile Ads SDK may automatically collect or share IP address (which may be used to estimate general location), app interactions, diagnostic information, and device or account identifiers for advertising, analytics, and fraud prevention. Where required, Google’s User Messaging Platform asks for your privacy choices before ads are requested. A “Privacy options” control is available in the game whenever the platform requires it.</p>
 
   <h2>Purchases</h2>
   <p>The optional “Remove Ads” purchase is processed by Google Play. We do not receive or store your payment card details. The game checks Google Play for the purchase state and stores only a local entitlement needed to remember whether advertising should be disabled.</p>
 
-  <h2>Third-party services</h2>
+  <h2>Third-party services</h2><p>Google Firebase Authentication and Cloud Firestore process optional account and online-progress data for the purposes above. Google AdMob and Google Play process advertising and purchase information as described below. We do not sell personal information. Service-provider processing and advertising disclosures must be considered separately.</p>
   <ul>
-    <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+    <li><a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a></li><li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
     <li><a href="https://support.google.com/admob/answer/6128543">How Google uses information from apps that use its services</a></li>
     <li><a href="https://play.google.com/about/play-terms/">Google Play Terms</a></li>
   </ul>
 
   <h2>Children</h2>
-  <p>The game is not directed to children under the minimum age required to consent to data processing in their country. We do not knowingly collect personal information directly from children. The age group and content rating shown on Google Play are the authoritative audience settings for the release.</p>
+  <p>The game’s intended age group and content rating are shown on Google Play. We do not knowingly collect personal information directly from children. Where applicable, advertising and consent handling follows the audience settings and legal requirements configured for the release.</p>
 
-  <h2>Data retention and choices</h2>
-  <p>Local gameplay and entitlement data remains on your device until the app data is cleared or the app is removed. Purchase records are retained by Google under its own policies. You may manage advertising and consent choices through the in-game privacy control when available and through your Android and Google account settings.</p>
-
-  <h2>Security and international processing</h2>
+  <h2>Your choices</h2><p>Guest/local play is available without Google sign-in. You can sign out, request account deletion, manage required advertising privacy choices in the game, and manage Android/Google account settings.</p><h2>Security and international processing</h2>
   <p>Third-party SDK data is transmitted using encrypted connections. Google may process information in countries other than your own under its published privacy safeguards.</p>
 
   <h2>Changes</h2>
